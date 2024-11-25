@@ -1,0 +1,608 @@
+/* Add space around links (like Home Insurance) */
+.nav-link {
+    margin: 0 30px; /* Adjust the spacing as needed */
+    color: black;
+    font-size: medium;
+}
+
+/* Center the H1 text on the screen */
+.tagline {
+    text-align: center;
+    margin-top: 50px; /* Adjust vertical space */
+    font-size: 2rem; /* Optional: Change font size */
+}
+/* Container to align the logo and heading on the same line */
+.header-container {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Optional: Horizontally centers the content */
+    gap: 20px; /* Space between the logo and the heading */
+    margin-bottom: 50px;
+}
+.first{
+    background-color: #F5F3F3;
+    padding: 20px;
+}
+.tagline {
+    font-size: 2.5rem; /* Adjust text size */
+    font-weight: bold; /* Optional: Makes the text bold */
+    text-align: center;
+}
+
+.header-container img {
+    width: 120px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the rows */
+    gap: 20px; /* Space between the cards */
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px); /* 25% width minus gap space */
+    max-width: calc(25% - 20px); /* Ensures 4 cards fit in a row */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.2s ease-in-out;
+    height: 150px; /* Adjust height as needed */
+}
+.card-text {
+    font-size: 1rem;
+    text-align: center; /* Center align the paragraph text */
+}
+.card img {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Optional: Add hover effect for cards */
+.card:hover {
+    transform: scale(1.05);
+}
+.second {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.second h2 {
+    text-align: center; /* Centers the heading */
+    font-size: 40px;
+    /* font-weight: ; */
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.container1 img {
+    max-width: 40%; /* Adjust image size */
+    height: auto;
+}
+
+.container1 .text {
+    max-width: 50%; /* Adjust text width */
+    text-align: left;
+}
+
+.container1 .text h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container1 .text ol {
+    padding-left: 20px;
+}
+
+.container1 .text ol li {
+    margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 cards per row on medium screens */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row on smaller screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%; /* 1 card per row on very small screens */
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        flex-direction: column; /* Stack the content vertically on small screens */
+        align-items: center;
+    }
+    .container1 img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    .container1 .text {
+        max-width: 100%;
+    }
+}
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text-center h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.text-center p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: space-around; /* Adds space around the buttons */
+    margin-top: 30px;
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+.option {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow */
+    display: flex;
+    align-items: center; /* Aligns content (image and text) horizontally */
+    justify-content: space-around;
+    flex-direction: row; /* Aligns icon and text horizontally */
+}
+
+.option img {
+    max-width: 30px;
+    margin-right: 10px; /* Adds space between the image and text */
+}
+
+.option:hover {
+    border-color: #0056b3; /* Adds border color on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+
+.additional-content {
+    display: none;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.additional-content.show {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .options {
+        justify-content: center; /* Center the buttons on smaller screens */
+    }
+
+    .option {
+        flex: 1 1 calc(50% - 20px); /* Two buttons per row on smaller screens */
+        max-width: 150px;
+    }
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Card takes up 50% of the container width */
+    height: 500px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.card-img-top {
+    width: 100%; /* Ensure image takes full width of the card */
+    height: 50%; /* Image takes up half of the card */
+    object-fit: cover; /* Cover the area without stretching */
+    object-position: top center; /* Position the image at the top center */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    height: 100%; /* Take full height of the card */
+    padding: 20px;
+    text-align: center; /* Center align the text */
+}
+.card-text{
+    font-size: 2.0;
+}
+.card-list {
+    width: 48%; /* List takes up the other 50% of the container width */
+    height: 500px;
+    padding: 20px;
+    overflow-y: hidden;
+}
+
+.card-list ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.card-list li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.card-list a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.card-list p {
+    color: black;
+    font-size: 18px;
+    line-height: 2.0;
+}
+
+.card-list li a:hover {
+    color: #0056b3;
+}
+/* Container styling */
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Image wrapper */
+.quote-image-wrapper {
+  margin-bottom: 20px;
+}
+
+.quote-image {
+  width: 80px;
+  height: auto;
+}
+
+/* Title styling */
+.quote-title-wrapper {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.quote-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Description styling */
+.quote-description-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quote-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Form styling */
+.quote-form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Select field styling */
+.quote-select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.quote-select:hover,
+.quote-select:focus {
+  border-color: #0056b3;
+}
+
+/* Input field styling */
+.quote-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.quote-input:hover,
+.quote-input:focus {
+  border-color: #0056b3;
+}
+
+/* Button styling */
+.quote-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quote-btn:hover {
+  background-color: #004494;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .quote-form-wrapper {
+    flex-direction: column;
+  }
+  .quote-select,
+  .quote-input,
+  .quote-btn {
+    width: 100%;
+  }
+}
+/* Container styling */
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:#E4EAEF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  
+  /* Image wrapper */
+  .quote-image-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .quote-image {
+    width: 80px;
+    height: auto;
+  }
+  
+  /* Title styling */
+  .quote-title-wrapper {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .quote-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Description styling */
+  .quote-description-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .quote-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Form styling */
+  .quote-form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Select field styling */
+  .quote-select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  .quote-select:hover,
+  .quote-select:focus {
+    border-color: #0056b3;
+  }
+  
+  /* Input field styling */
+  .quote-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+  }
+  
+  .quote-input:hover,
+  .quote-input:focus {
+    /* border-color: #0056b3; */
+  }
+  
+  /* Button styling */
+  .quote-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #E73989;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;  }
+  
+  .quote-btn:hover {
+    background-color: #004494;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .quote-form-wrapper {
+      flex-direction: column;
+    }
+    .quote-select,
+    .quote-input,
+    .quote-btn {
+      width: 100%;
+    }
+  }
+  .footer {
+    margin-top: 50px;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between; /* Space between sections */
+    align-items: flex-start; /* Align sections at the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between sections */
+}
+
+.logo {
+    flex: 1; /* Logo section takes up one flex unit */
+}
+
+.logo h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.icon img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.phone, .email {
+    margin-top: 20px;
+}
+
+.phone h1, .email h1 {
+    font-size: 14px;
+    color: #555;
+}
+
+.links {
+    display: flex;
+    gap: 40px; /* Space between columns */
+    flex: 2; /* Links section takes up more space */
+}
+
+.links-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-column h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.links-column a {
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.links-column a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+}

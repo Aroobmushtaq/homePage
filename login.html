@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1 class="title">Login to your agent account</h1>
+
+
+
+        <form accept-charset="UTF-8" action="/user_sessions" method="post">
+            <div style="margin:0;padding:0;display:inline">
+                <input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden"
+                    value="RtIPxTAqH1Q9VkD3jsHerjgRVuk7kPGCIitP9PcJwz4=">
+            </div>
+
+            <div class="email-field">
+                <label for="user_session_email" class="form-label">Email</label>
+                <input type="email" name="user_session[email]" class="form-control" id="user_session_email">
+            </div>
+
+            <div class="password-field">
+                <label for="user_session_password" class="form-label">Password</label>
+                <input type="password" name="user_session[password]" class="form-control" id="user_session_password">
+                <i class="password-display" onclick="togglePassword()">
+                    <!-- <img alt="Noshow-icon" id="show-icon"
+                        src="/assets/noshow-icon-58e4f9127562a7e360e82151c5299bd8.svg">
+                    <img alt="Show-icon" id="hide-icon" src="/assets/show-icon-d1ef9f9e1b07f53f264ea1b831df2d2b.svg"> -->
+                </i>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Login</button>
+        </form>
+
+        <div class="nav-links">
+            <a href="/password_resets/new">Forgot Your Password?</a>
+            <a href="https://contactability.com/quote_calls"><span class="black">Don't have an account? </span><span
+                    class="bold">Sign Up</span></a>
+            <a href="https://smartfinancial.com/agents/term-of-use" target="_blank" style="margin-top: 28px;"> Terms of
+                Use </a>
+        </div>
+
+    </div>
+</body>
+
+</html>
